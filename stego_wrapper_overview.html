@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stego‑Aware WhatsApp Wrapper</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-gray-100 to-white font-sans">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-blue-800">SecureWrap</a>
+      <div class="space-x-6">
+        <a href="#concept" class="text-gray-600 hover:text-blue-700">Concept</a>
+        <a href="#feasibility" class="text-gray-600 hover:text-blue-700">Feasibility</a>
+        <a href="#market" class="text-gray-600 hover:text-blue-700">Market</a>
+        <a href="#business" class="text-gray-600 hover:text-blue-700">Business</a>
+        <a href="#roadmap" class="text-gray-600 hover:text-blue-700">Roadmap</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl lg:text-6xl font-extrabold mb-4">Stego‑Aware WhatsApp Wrapper</h1>
+      <p class="text-xl lg:text-2xl">A defense‑in‑depth security layer for seamless media safety</p>
+      <a href="#concept" class="mt-8 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 py-12 space-y-16">
+
+    <!-- Concept & Thought Process -->
+    <section id="concept" class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">Concept &amp; Thought Process</h2>
+      <p class="text-gray-700 mb-4">You envisioned a transparent security wrapper around WhatsApp that:</p>
+      <ul class="list-disc list-inside space-y-3 text-gray-700">
+        <li><strong>Intercepts</strong> every downloaded image before it lands in your gallery.</li>
+        <li><strong>Detects &amp; Quarantines</strong> known malware via integrated signature engines.</li>
+        <li><strong>Analyzes</strong> for hidden steganographic payloads (LSB, AI watermarks, custom C2 commands).</li>
+        <li><strong>Alerts</strong> users with clear, non‑intrusive notifications only when risk is high.</li>
+      </ul>
+    </section>
+
+    <!-- Feasibility & Technical Reality -->
+    <section id="feasibility" class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">Feasibility &amp; Reality</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-semibold text-green-700 mb-4">What's Possible Today</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li>File watchers on <strong>Android</strong> (Services) &amp; <strong>Desktop</strong> (FUSE mounts).</li>
+            <li>Seamless <strong>AV Scanning</strong> via ClamAV or commercial SDKs.</li>
+            <li>Browser Extension intercepting <strong>WhatsApp Web</strong> downloads.</li>
+            <li>Hybrid on‑device heuristics + cloud sandbox for in‑depth checks.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-red-600 mb-4">Challenges &amp; Limits</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li>No sanctioned way on <strong>iOS</strong> without jailbreak.</li>
+            <li>Detection drops < 90% accuracy on compressed images.</li>
+            <li>Deep scans introduce latency—instant feel can degrade.</li>
+            <li>False positives frustrate users unless < 1% FPR.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Landscape & Gaps -->
+    <section id="market" class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">Market Landscape &amp; Gaps</h2>
+      <div class="space-y-4 text-gray-700">
+        <p>Current tools address parts of the stack but fall short of a unified solution:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Enterprise DLP Suites</strong>: Robust but heavy and no stego support.</li>
+          <li><strong>Mobile AV Apps</strong>: Basic scans, lack folder hooks &amp; stego analysis.</li>
+          <li><strong>VirusTotal Mobile</strong>: Manual uploads, no automation.</li>
+          <li><strong>Steganalysis CLI Tools</strong>: Research‑grade, no API or mobile SDK.</li>
+        </ul>
+        <p><strong>Opportunity:</strong> A privacy‑first, consumer‑grade app that seamlessly blends malware &amp; stego detection.</p>
+      </div>
+    </section>
+
+    <!-- Pros, Cons & Business Model -->
+    <section id="business" class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">Pros, Cons &amp; Business Model</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold text-green-700 mb-4">Pros</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li>Unique differentiator with stego + AV in one wrapper.</li>
+            <li>Privacy‑focused: on‑device checks, cloud opt‑in only.</li>
+            <li>Scalable: POC on Android, extendable to browser.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-red-600 mb-4">Cons</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li>Platform limits on iOS make full coverage hard.</li>
+            <li>Potential latency vs. native instant delivery.</li>
+            <li>False alarms could drive uninstallers.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Business Model</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Freemium:</strong> Basic AV &amp; heuristic stego scanning free; advanced sandbox &amp; logs paid.</li>
+          <li><strong>Enterprise Tier:</strong> MDM integration, policy enforcement, SLA support.</li>
+          <li><strong>Extension Upsell:</strong> Advanced browser plugin features and custom rules.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Roadmap & Requirements -->
+    <section id="roadmap" class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">Roadmap &amp; Requirements</h2>
+      <ol class="list-decimal list-inside space-y-3 text-gray-700">
+        <li>Develop Android POC: file watcher, ClamAV SDK, sleek alert UI.</li>
+        <li>Integrate &amp; tune open‑source stego detector on sample data.</li>
+        <li>Deploy cloud pipeline (Kubernetes, RabbitMQ) for deep analysis.</li>
+        <li>Beta testing: achieve ≤1% FPR, gather UX feedback.</li>
+        <li>Launch browser extension prototype with WASM heuristics.</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 SecureWrap Inc. All rights reserved.</p>
+      <p>Designed for security enthusiasts &amp; business partners.</p>
+    </div>
+  </footer>
+</body>
+</html>
